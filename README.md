@@ -1,4 +1,14 @@
-# HydroVision API Documentation
+# HydroVision Backend Service
+
+## Descrição
+
+Este projeto desenvolve o back-end de um serviço para gerenciar a leitura individualizada de consumo de água e gás. Através de três endpoints, o serviço permitirá o upload de imagens de medidores, a confirmação ou correção de leituras e a listagem de medições realizadas por um cliente. O serviço utiliza a API do Google Gemini para processar e interpretar as imagens enviadas.
+
+## Funcionalidades
+
+1. **Upload de Imagens**: Recebe uma imagem em base64 e retorna a medição lida pela API.
+2. **Confirmação de Leitura**: Permite confirmar ou corrigir a leitura realizada pela IA.
+3. **Listagem de Medições**: Fornece a lista de medições realizadas por um cliente específico.
 
 ## Endpoints
 
@@ -13,7 +23,7 @@
     "measure_datetime": "datetime",
     "measure_type": "WATER" ou "GAS"
   }
-         
+
 
 ### Responses:
 - 200: Operação realizada com sucesso
